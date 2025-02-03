@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Valentine's Day Invitation</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    var whoo = new Audio();
+    whoo.src = "maja-kilig-official-lyric-video.mp3";
+
+    var drumroll =  new Audio ();
+    drumroll.src = "drumroll.mp3";
+
+    var boo = new Audio();
+    boo.src = "boo.mp3";
+  </script>
+
+</head>
+<body>
+ 
+  <div class="invitation">
+    <h1>Will you go out with me?</h1>
+
+    <img src="angry.gif" width="100px" height="100px">
+    
+ 
+    <div class="details">
+      <p>Date: February 12th</p>
+      <p>Time: 11:00am</p>
+      <p>Location: Cliake Photo Studio ➡️ Ayala Feliz </p>
+    </div>
+    <br>
+    <nav id = >
+    <button id="myBtn" class="yesButton" onmousedown="whoo.play()" onclick="openModal()">Yes</button>
+    <button class="noButton" onclick="boo.play()">No</button>
+    <div id "modal" class = "modal" style="display: none;">
+      <div class="modal-content">
+        <h2>Yay! I'm so excited!</h2>
+        <button class ="close" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+    <script>
+      function openModal() {
+        document.getElementById("modal").style.display = "block";
+      }
+      
+      function closeModal() {
+        document.getElementById("modal").style.display = "none";
+      }
+    </script>
+
+    <p>With Love, Bebu</p>
+  </div>
+</body>
+
+
+</html>

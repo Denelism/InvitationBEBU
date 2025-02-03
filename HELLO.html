@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Valentine's Day Invitation</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    var whoo = new Audio();
+    whoo.src = "maja-kilig-official-lyric-video.mp3";
+
+    var drumroll =  new Audio ();
+    drumroll.src = "drumroll.mp3";
+
+    var boo = new Audio();
+    boo.src = "boo.mp3";
+  </script>
+
+</head>
+<body>
+ 
+  <div class="invitation">
+    <h1>Will you go out with me?</h1>
+
+    <img src="capoo1.gif" width="200px" height="200px">
+    
+ 
+    <div class="details">
+      <p>Date: February 12th</p>
+      <p>Time: 11:00am</p>
+      <p>Location: Cliake Photo Studio ➡️ Ayala Feliz </p>
+    </div>
+    <br>
+    <button class="yesButton" onclick="openModal()" onmousedown="whoo.play()">Yes</button>
+    <button class="noButton" onclick="openModal2()" onmousedown="boo.play()">No</button>
+    <div class="modal" id="modal" style="display: none;">
+      <div class="modal-content">
+        <h1 class="header">I am so excited!</h1>
+        <p class="message">HEHE</p>
+        <img src="dance.gif" alt="Confetti">
+        <button class="close-button" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+
+    <div class="modal2" id="modal2" style="display: none;">
+      <div class="modal-content">
+        <h1 class="header">WHAT?!?!</h1>
+        <p class="message">naurr why</p>
+        <img src="angry.gif">
+        <button class="close-button" onclick="closeModal2()">Close</button>
+      </div>
+    </div>
+
+   
+
+    <script>
+      function openModal() {
+        document.getElementById("modal").style.display = "block";
+      }
+      function openModal2(){
+        document.getElementById("modal2").style.display = "block";
+      }
+      
+      
+      function closeModal() {
+        document.getElementById("modal").style.display = "none";
+      }
+      function closeModal2(){
+        document.getElementById("modal2").style.display = "none";
+      }
+    </script>
+
+    <p>With Love, Bebu</p>
+  </div>
+</body>
+
+
+</html>
